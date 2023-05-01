@@ -52,7 +52,7 @@ namespace Api.Controllers
 
             return new ObjectResult(accountTree);
         }
-
+        [HttpGet]//izady
         [Route("[action]")]
         public IActionResult Account(int id)
         {
