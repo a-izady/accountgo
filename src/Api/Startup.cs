@@ -27,23 +27,27 @@ namespace Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services
                 .AddControllers()
-                .AddNewtonsoftJson(options => 
-                    {
-                        options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver();
-                        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-                    }
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver();
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                }
                 );
 
-            string connectionString = Configuration["Data:DevelopmentConnection:ConnectionString"];
-            // These environment variables can be overriden from launchSettings.json.
-            string dbServer = System.Environment.GetEnvironmentVariable("DBSERVER") ?? "localhost";
-            string dbUserID = System.Environment.GetEnvironmentVariable("DBUSERID") ?? "sa";
-            string dbUserPassword= System.Environment.GetEnvironmentVariable("DBPASSWORD") ?? "Str0ngPassword";
-            string dbName= System.Environment.GetEnvironmentVariable("DBNAME") ?? "accountgodb";
 
-            connectionString = String.Format(Configuration["Database:ConnectionString"], dbServer, dbUserID, dbUserPassword, dbName);
+
+            string connectionString = Configuration.GetConnectionString("IzadyConnectionString");
+            //string connectionString = Configuration["Data:DevelopmentConnection:ConnectionString"];
+            // These environment variables can be overriden from launchSettings.json.
+            //string dbServer = System.Environment.GetEnvironmentVariable("DBSERVER") ?? "localhost";
+            //string dbUserID = System.Environment.GetEnvironmentVariable("DBUSERID") ?? "sa";
+            //string dbUserPassword= System.Environment.GetEnvironmentVariable("DBPASSWORD") ?? "Str0ngPassword";
+            //string dbName= System.Environment.GetEnvironmentVariable("DBNAME") ?? "accountgodb";
+
+            //connectionString = String.Format(Configuration["Database:ConnectionString"], dbServer, dbUserID, dbUserPassword, dbName);
 
             System.Console.WriteLine("DB Connection String: " + connectionString);
 
