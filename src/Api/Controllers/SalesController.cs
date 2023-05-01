@@ -14,6 +14,7 @@ using Services.TaxSystem;
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class SalesController : BaseController
     {
         private readonly IAdministrationService _adminService;
