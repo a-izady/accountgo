@@ -3,6 +3,7 @@
  #My Change:
  
  1-Swagger Implementation
+ 2-Add [ApiController] attribute to all Api controller
  
 # AccountGo
 Accounting System built on .net core, opensource and cross platform (ASP.NET Core MVC + ReactJS on the Frontend). This is useful if you have a requirement to develop accounting system. Although it's still in early stage and still have lots of work to do but happy to share it to anyone. It is designed for small size businesses and the idea is to help them run efficient business by using Accounting System fit to them.
