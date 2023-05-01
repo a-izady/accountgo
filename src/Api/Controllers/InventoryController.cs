@@ -8,6 +8,7 @@ using System.Linq;
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class InventoryController : BaseController
     {
         private readonly IAdministrationService _adminService;
