@@ -17,6 +17,7 @@ using System.Text;
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]//izady
     public class AdministrationController : BaseController
     {
         private readonly IAdministrationService _adminService;
@@ -240,6 +241,7 @@ namespace Api.Controllers
             return new ObjectResult(userDto);
         }
 
+        
         [HttpPost]
         [Route("[action]")]
         public IActionResult SaveCompany([FromBody]Company companyDto)
