@@ -9,6 +9,7 @@ using Services.Financial;
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class PurchasingController : BaseController
     {
         private readonly IAdministrationService _adminService;
