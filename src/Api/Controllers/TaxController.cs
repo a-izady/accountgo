@@ -7,6 +7,7 @@ using System.Linq;
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class TaxController : BaseController
     {
         private readonly ITaxService _taxService;
