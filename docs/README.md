@@ -8,10 +8,11 @@
  
  3-Add connectionstring to appsettings.json named IzadyConnectionString, Please change it to your liking
  
- # Initialize Database:
+  Initialize Database:
  
  A-Execute SaveCompany in api project with bellow Request body (please note that id must be zero)
  This command create a company in database.
+ ```
  {
   "id": 0,
   "modifiedBy": "Izady",
@@ -20,7 +21,7 @@
   "shortName": "TN",
   "logo": []
 }
- 
+ ```
  --------------------------------------
  
 # AccountGo
