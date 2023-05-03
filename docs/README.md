@@ -1,10 +1,18 @@
 [![Build Status](https://dev.azure.com/accountgo/accountgo/_apis/build/status/AccountGo-Nightly-Build)](https://dev.azure.com/accountgo/accountgo/_build/latest?definitionId=10)
  
- #My Change:
+ ####My Change:
  
  1-Swagger Implementation
  
  2-Add [ApiController] attribute to all Api controller
+ 
+ 3-Add connectionstring to appsettings.json
+ 
+ # Initialize Database:
+ 
+ 
+ 
+ --------------------------------------
  
 # AccountGo
 Accounting System built on .net core, opensource and cross platform (ASP.NET Core MVC + ReactJS on the Frontend). This is useful if you have a requirement to develop accounting system. Although it's still in early stage and still have lots of work to do but happy to share it to anyone. It is designed for small size businesses and the idea is to help them run efficient business by using Accounting System fit to them.
