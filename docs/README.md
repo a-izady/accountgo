@@ -10,7 +10,7 @@
  
   Initialize Database:
  
- A-Execute SaveCompany in api project with bellow Request body (please note that id must be zero)
+ A-Execute SaveCompany in api project with bellow Request body (please note that id shuold be zero)
  This command create a company in database.
  ```
  {
