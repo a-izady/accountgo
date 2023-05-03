@@ -6,11 +6,20 @@
  
  2-Add [ApiController] attribute to all Api controller
  
- 3-Add connectionstring to appsettings.json
+ 3-Add connectionstring to appsettings.json named IzadyConnectionString, Please change it to your liking
  
  # Initialize Database:
  
- 
+ A-Execute SaveCompany in api project with bellow Request body (please note that id must be zero)
+ This command create a company in database.
+ {
+  "id": 0,
+  "modifiedBy": "Izady",
+  "companyCode": "001",
+  "name": "TowzinNegar",
+  "shortName": "TN",
+  "logo": []
+}
  
  --------------------------------------
  
