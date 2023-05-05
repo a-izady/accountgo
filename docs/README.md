@@ -24,7 +24,11 @@
   "logo": []
 }
  ```
+ 
+ 
  B-Execute : api/Administration/Setup
+ 
+ 
  --------------------------------------
  
 # AccountGo
