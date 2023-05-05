@@ -333,6 +333,9 @@ namespace Api.Data
         private void SetupLedgerSetting(Core.Domain.Company company)
         {
             Core.Domain.Financials.GeneralLedgerSetting glSetting = null;
+             //--------------izady-----
+            glSetting = _financialService.GetGeneralLedgerSetting();
+            //-----------------------
             if (_financialService.GetGeneralLedgerSetting() == null)
             {
                 glSetting = new Core.Domain.Financials.GeneralLedgerSetting
