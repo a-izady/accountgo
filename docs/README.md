@@ -8,6 +8,8 @@
  
  3-Add connectionstring to appsettings.json named IzadyConnectionString, Please change it to your liking
  
+ 4-Solve the problem of initializing the database
+ 
   Initialize Database:
  
  A-Execute SaveCompany in api project with bellow Request body (please note that id shuold be zero)
@@ -22,6 +24,7 @@
   "logo": []
 }
  ```
+ B-Execute : api/Administration/Setup
  --------------------------------------
  
 # AccountGo
